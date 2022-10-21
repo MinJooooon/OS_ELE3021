@@ -39,7 +39,7 @@
 # The overall flow
 
 + How scheduler() is called
-[![scheduler](uploads/1c1a2f5deae6daf82560e485763ad2b8/scheduler.png)](https://ibb.co/j5R3rd8)
+[![scheduler](https://ibb.co/j5R3rd8)]
 
 + How process is made and scheduled by scheduler()
 ![how_process_is_made_and_scheduled](uploads/c859398a063ff858c3c3b489107a432e/how_process_is_made_and_scheduled.png)
