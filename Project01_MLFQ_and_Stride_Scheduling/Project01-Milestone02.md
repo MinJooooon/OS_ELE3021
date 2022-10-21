@@ -39,13 +39,13 @@
 # The overall flow
 
 + How scheduler() is called
-![scheduler](scheduler.png)
+![scheduler](images/scheduler.png)
 
 + How process is made and scheduled by scheduler()
-![how_process_is_made_and_scheduled](uploads/c859398a063ff858c3c3b489107a432e/how_process_is_made_and_scheduled.png)
+![how_process_is_made_and_scheduled](images/how_process_is_made_and_scheduled.png)
 
 + How process is terminated
-![process_terminated](uploads/939df33c8216db50ec735147b877d8be/process_terminated.png)
+![process_terminated](images/process_terminated.png)
 
 # Implementation
 
@@ -443,45 +443,45 @@ sys_yield(void)
 
 1. Stride 5%, Stride 15%, MLFQ_LEVCNT, MLFQ_NONE
 + Test results
-![5_15_CNT_NONE](uploads/847aa7decbeb2be6ae10d3368abb2b23/5_15_CNT_NONE.png)
+![5_15_CNT_NONE](images/5_15_CNT_NONE.png)
 + Results analysis
   + Stride 5%: -0.2% error occurred
   + Stride 15%: +0.1% error occurred
   + An actual result of an example is almost consistent with the expected result
-![5_15_CNT_NONE_표](uploads/1395ef775a8497fd433f65e83298865c/5_15_CNT_NONE_표.png)
+![5_15_CNT_NONE_표](images/5_15_CNT_NONE_표.png)
 round off to the nearest tenth
 
 2. Stride 5%, Stride 10%, Stride 15%, MLFQ_LEVCNT, MLFQ_NONE
 + Test results
-![5_10_15_CNT_NONE](uploads/13723872506d434ebc4e4be26790a3a2/5_10_15_CNT_NONE.png)
+![5_10_15_CNT_NONE](images/5_10_15_CNT_NONE.png)
 + Results analysis
   + Stride 5%: -0.5% error occurred
   + Stride 10%: -1.9% error occurred 
   + Stride 15%: -1.7% error occurred
   + An actual result of an example is not as accurate as Example 1, but still almost consistent with the expected result
-![5_10_15_CNT_NONE_표](uploads/4887e40ebb5fff852ee5a04ebd94a2f4/5_10_15_CNT_NONE_표.png)
+![5_10_15_CNT_NONE_표](images/5_10_15_CNT_NONE_표.png)
 round off to the nearest tenth
 
 3. Stride 50%, Stride 35%, MLFQ_LEVCNT, MLFQ_NONE
 + Test results
-![50_35_CNT_NONE](uploads/0329324cd3af2abbbe793ccb5331a611/50_35_CNT_NONE.png)
+![50_35_CNT_NONE](images/50_35_CNT_NONE.png)
 + Results analysis
   + Stride 50%: +3.4% error occurred
   + Stride 35%: FAIL
   + The total sum of CPU share requested from the processes in the stride queue cannot exceed 80% of the total CPU time
   + An error rate of 'Stride 50%' have increased slightly than Example 1 and Example 2, but not so much
-![50_35_CNT_NONE_표](uploads/eda3844c43270ef6902f0efb3f292a4c/50_35_CNT_NONE_표.png)
+![50_35_CNT_NONE_표](images/50_35_CNT_NONE_표.png)
 round off to the nearest tenth
 
 4. Stride 10%, Stride 20%, MLFQ_LEVCNT_YIELD, MLFQ_NONE
 + Test results
-![10_20_yield_none](uploads/0f0508fd9c3cfbae022e9f6e4d082bde/10_20_yield_none.png)
+![10_20_yield_none](images/10_20_yield_none.png)
 + Results analysis
   + Stride 10%: +4.72% error occurred
   + Stride 20%: +7.62% error occurred
   + Processes yielded by process user relatively gain a smaller percentage of CPU time
   + Error rates of 'Stride 10%' and 'Stride 20%' have increased compare to the previous examples
-![10_20_yield_none_표](uploads/b8b7ed96299c282e145dc48b1f6d94c5/10_20_yield_none_표.png)round off to the nearest hundredth
+![10_20_yield_none_표](images/10_20_yield_none_표.png)round off to the nearest hundredth
 
 # Scheduler performance evaluation
 + MLFQ
