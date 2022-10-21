@@ -302,8 +302,8 @@ if(myproc() && myproc()->state == RUNNING && tf->trapno == T_IRQ0+IRQ_TIMER) {
   + The default time quantum is 5 ticks
 
 # Test Result
-![test1](uploads/f9c1b1319bb735ec98ce9ecfcb455cb5/test1.png)
-![test2](uploads/9a0fda29f20fad5f989e927f1b930087/test2.png)
-![test3](uploads/ef0568018d6e7f4613f915026f020534/test3.png)
-![test4-1](uploads/84bf72281fce7fddba9d10edcbeb1c20/test4-1.png)
+![test1](iamges/test1.png)
+![test2](iamges/test2.png)
+![test3](iamges/test3.png)
+![test4-1](iamges/test4-1.png)
 + It seems to be working well except stridetest
