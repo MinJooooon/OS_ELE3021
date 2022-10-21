@@ -2,7 +2,7 @@
 + Expand the maximum size of a file by implementing a triple indirect block
 
 # Overall Overview
-![indirect](uploads/13ae16fb3197414fd0266d50f6557c0a/indirect.png)
+![indirect](images/indirect.png)
 + One inode has 13 pointers
   + 10 Direct pointers
   + 1 Single indirect pointer
